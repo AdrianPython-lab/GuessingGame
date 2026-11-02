@@ -1,0 +1,19 @@
+#Liczba sie losuje 0-100. gracz musi zgadnąć
+#Program mowi czy liczba jest większa czy mniejsza
+import random
+
+x = random.randint(1,100)
+print("Hi, guess a number between 1 and 100")
+AnswerGuessed = False
+
+while AnswerGuessed == False:
+    Answer = int(input(""))
+
+    if Answer < x:
+        print("The number is bigger")
+    elif Answer > x:
+        print("The number is smaller")
+    else:
+        print("You won!")
+        AnswerGuessed = True
+    
